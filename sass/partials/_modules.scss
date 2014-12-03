@@ -11,7 +11,11 @@
 	img{ height: auto !important; }
 	
 	body, html{
-		min-width: $default-min-width;
+		float: left;
+		position: relative;
+		display: block;
+		height: 100%;
+		width: 100%;
 	}
 	
 	body{
@@ -49,6 +53,11 @@
 		@include opacity(0);
 	}
 	
+	.visible{
+		display: block !important;
+		visibility: visible !important;
+	}
+	
 	.clear-left{ clear: left; }
 	
 	a, h1, h2, h4{
@@ -70,6 +79,41 @@
 		img{
 			width: 12px;
 			height: auto;
+		}
+	}
+	
+	.sep{
+		border-top: 6px solid lighten($brand-grey,50%);
+		width: 100%;
+		@extend .float-left;
+		&.sml { width: 10%; }
+	}
+	
+//  ==========================================================================
+//  Headings Fonts
+//  ==========================================================================
+
+	.h1{
+		font: normal 44px/44px $gotham-light;
+		color: $brand-grey;
+	}
+	
+	.h2{
+		font: normal 30px/32px $gotham-light;
+		color: $brand-grey;
+	}
+	
+	.standard-p{
+		font: normal 14px/18px $gotham-light;
+		&.large{
+			font-size: 22px;
+		}
+	}
+	
+	.red{
+		color: $brand-red;
+		&:hover{
+			text-decoration: underline !important;
 		}
 	}
 	
@@ -113,6 +157,64 @@
 			ul{
 				display: block;
 				visibility: visible;
+			}
+		}
+	}
+	
+	.primary-mobile-trigger{
+		@extend .full-width;
+		background: $brand-red;
+		padding: 10px;
+		color: white !important;
+		text-transform: uppercase;
+		display: none;
+		visibility: hidden;
+		@include box-sizing(border-box);
+		&:hover{
+			background: $brand-grey;
+			color: white !important;
+		}
+	}
+
+//  ==========================================================================
+//  Homepage 
+//  ==========================================================================
+
+	.hp-hero{
+		margin-bottom: 20px;
+		.hp-hero-heading{
+			margin: 0;
+			position: absolute;
+			bottom: 0px;
+			background: $brand-red image-url('hp-hero-background.jpg') center bottom no-repeat;
+			background-blend-mode: multiply;
+			padding: 10px;
+			font: normal 40px $gotham-light;
+			color: white;
+			@include background-size(cover);
+			@include box-sizing(border-box);
+			
+		}
+	}
+	
+//  ==========================================================================
+//  Site Footer
+//  ==========================================================================
+
+	.site-footer{
+		border-top: 1px solid #bbb;
+		margin-top: 60px;
+		.footer-nav{
+			li, a{
+				@extend .float-left;
+			}
+			a{
+				@extend .standard-p;
+				padding: 5px;
+				color: $brand-grey;
+				&:hover{
+					color: $brand-red;
+				}
 			}
 		}
 	}

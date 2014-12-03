@@ -1,0 +1,96 @@
+@media screen and (max-width: 1060px){
+	
+	//  ==========================================================================
+	//  Resize Primary Site Container
+	//  ==========================================================================
+	
+		.site-container{
+			width: 100%;
+			left: 0;
+			margin-left: 0px;
+			padding: 0 10px;
+			@include box-sizing(border-box);
+		}
+}
+
+@media screen and (max-width: 720px){
+	
+	//  ==========================================================================
+	//  Resize Header Elements
+	//  ==========================================================================
+	
+		.site-header{
+			text-align: center;
+			padding:0;
+			img{ width: 90%; }
+		}
+		
+	//  ==========================================================================
+	//  Primary Nav
+	//  ==========================================================================
+	
+		.primary-nav{
+			width: 100%;
+			padding: 0px;
+			> ul{
+				display: none;
+				visibility: hidden;
+				border: 1px solid #bbb;
+				@include box-sizing(border-box);
+			}
+			ul, li, a{ text-align: center; }
+			li{
+				> ul { 
+					display: block; 
+					visibility: visible; 
+					margin: 0; padding: 0;
+					li{
+						background: rgba(#bbb,.4);
+					}
+				}
+			}
+		}
+		
+		.primary-mobile-trigger{
+			display: block;
+			visibility: visible;
+		}
+	
+	//  ==========================================================================
+	//  Main Content
+	//  ==========================================================================
+	
+		.primary-content{
+			width: 100%;
+			padding: 20px 0;
+		}
+		
+		.hp-hero .hp-hero-heading{
+			float: left;
+			position: relative;
+		}
+		
+		.standard-p.large{
+			font-size: 26px;
+			line-height: 28px;
+		}
+		
+	//  ==========================================================================
+	//  Site Footer
+	//  ==========================================================================
+	
+		.site-footer{
+			margin-top: 20px;
+			.footer-nav{
+				width: 100%;
+				float: left;
+				ul{
+					float: left;
+					width: 100%;
+					padding: 0px;
+					margin: 0px;
+				}
+			}
+		}
+	
+}
