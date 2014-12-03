@@ -44,7 +44,7 @@ html, body { font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-f
 
 .center-text { text-align: center !important; }
 
-.full-width, .site_touch-menu, .site_nav li, .site_nav a { float: left; position: relative; display: block; width: 100%; }
+.full-width, .primary-nav ul li, .primary-nav ul a { float: left; position: relative; display: block; width: 100%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
 
@@ -122,8 +122,8 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 
 table { border-collapse: collapse; border-spacing: 0; }
 
-@font-face { font-family: "gotham-light"; src: url('/css/fonts/gothamhtf-light-webfont.eot?312786000') format('embedded-opentype'), url('/css/fonts/gothamhtf-light-webfont.ttf?312786000') format('truetype'), url('/css/fonts/gothamhtf-light-webfont.woff?312786000') format('woff'); }
-@font-face { font-family: "foundation-icons"; src: url('/css/fonts/foundation-icons.eot') format('embedded-opentype'), url('/css/fonts/foundation-icons.ttf') format('truetype'), url('/css/fonts/foundation-icons.woff') format('woff'); }
+@font-face { font-family: "foundation-icons"; src: url('/css/fonts/foundation-icons.eot?1377275155') format('embedded-opentype'), url('/css/fonts/foundation-icons.ttf?1377275155') format('truetype'), url('/css/fonts/foundation-icons.woff?1377275155') format('woff'); }
+@font-face { font-family: "gotham light"; src: url('/css/fonts/gothamhtf-light-webfont.eot?1417569387') format('embedded-opentype'), url('/css/fonts/gothamhtf-light-webfont.ttf?1417569388') format('truetype'), url('/css/fonts/gothamhtf-light-webfont.woff?1417569388') format('woff'); }
 /*  Foundation Icons v 3.0 Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3 MIT License */
 .fi-address-book:before, .fi-alert:before, .fi-align-center:before, .fi-align-justify:before, .fi-align-left:before, .fi-align-right:before, .fi-anchor:before, .fi-annotate:before, .fi-archive:before, .fi-arrow-down:before, .fi-arrow-left:before, .fi-arrow-right:before, .fi-arrow-up:before, .fi-arrows-compress:before, .fi-arrows-expand:before, .fi-arrows-in:before, .fi-arrows-out:before, .fi-asl:before, .fi-asterisk:before, .fi-at-sign:before, .fi-background-color:before, .fi-battery-empty:before, .fi-battery-full:before, .fi-battery-half:before, .fi-bitcoin-circle:before, .fi-bitcoin:before, .fi-blind:before, .fi-bluetooth:before, .fi-bold:before, .fi-book-bookmark:before, .fi-book:before, .fi-bookmark:before, .fi-braille:before, .fi-burst-new:before, .fi-burst-sale:before, .fi-burst:before, .fi-calendar:before, .fi-camera:before, .fi-check:before, .fi-checkbox:before, .fi-clipboard-notes:before, .fi-clipboard-pencil:before, .fi-clipboard:before, .fi-clock:before, .fi-closed-caption:before, .fi-cloud:before, .fi-comment-minus:before, .fi-comment-quotes:before, .fi-comment-video:before, .fi-comment:before, .fi-comments:before, .fi-compass:before, .fi-contrast:before, .fi-credit-card:before, .fi-crop:before, .fi-crown:before, .fi-css3:before, .fi-database:before, .fi-die-five:before, .fi-die-four:before, .fi-die-one:before, .fi-die-six:before, .fi-die-three:before, .fi-die-two:before, .fi-dislike:before, .fi-dollar-bill:before, .fi-dollar:before, .fi-download:before, .fi-eject:before, .fi-elevator:before, .fi-euro:before, .fi-eye:before, .fi-fast-forward:before, .fi-female-symbol:before, .fi-female:before, .fi-filter:before, .fi-first-aid:before, .fi-flag:before, .fi-folder-add:before, .fi-folder-lock:before, .fi-folder:before, .fi-foot:before, .fi-foundation:before, .fi-graph-bar:before, .fi-graph-horizontal:before, .fi-graph-pie:before, .fi-graph-trend:before, .fi-guide-dog:before, .fi-hearing-aid:before, .fi-heart:before, .fi-home:before, .fi-html5:before, .fi-indent-less:before, .fi-indent-more:before, .fi-info:before, .fi-italic:before, .fi-key:before, .fi-laptop:before, .fi-layout:before, .fi-lightbulb:before, .fi-like:before, .fi-link:before, .fi-list-bullet:before, .fi-list-number:before, .fi-list-thumbnails:before, .fi-list:before, .fi-lock:before, .fi-loop:before, .fi-magnifying-glass:before, .fi-mail:before, .fi-male-female:before, .fi-male-symbol:before, .fi-male:before, .fi-map:before, .fi-marker:before, .fi-megaphone:before, .fi-microphone:before, .fi-minus-circle:before, .fi-minus:before, .fi-mobile-signal:before, .fi-mobile:before, .fi-monitor:before, .fi-mountains:before, .fi-music:before, .fi-next:before, .fi-no-dogs:before, .fi-no-smoking:before, .fi-page-add:before, .fi-page-copy:before, .fi-page-csv:before, .fi-page-delete:before, .fi-page-doc:before, .fi-page-edit:before, .fi-page-export-csv:before, .fi-page-export-doc:before, .fi-page-export-pdf:before, .fi-page-export:before, .fi-page-filled:before, .fi-page-multiple:before, .fi-page-pdf:before, .fi-page-remove:before, .fi-page-search:before, .fi-page:before, .fi-paint-bucket:before, .fi-paperclip:before, .fi-pause:before, .fi-paw:before, .fi-paypal:before, .fi-pencil:before, .fi-photo:before, .fi-play-circle:before, .fi-play-video:before, .fi-play:before, .fi-plus:before, .fi-pound:before, .fi-power:before, .fi-previous:before, .fi-price-tag:before, .fi-pricetag-multiple:before, .fi-print:before, .fi-prohibited:before, .fi-projection-screen:before, .fi-puzzle:before, .fi-quote:before, .fi-record:before, .fi-refresh:before, .fi-results-demographics:before, .fi-results:before, .fi-rewind-ten:before, .fi-rewind:before, .fi-rss:before, .fi-safety-cone:before, .fi-save:before, .fi-share:before, .fi-sheriff-badge:before, .fi-shield:before, .fi-shopping-bag:before, .fi-shopping-cart:before, .fi-shuffle:before, .fi-skull:before, .fi-social-500px:before, .fi-social-adobe:before, .fi-social-amazon:before, .fi-social-android:before, .fi-social-apple:before, .fi-social-behance:before, .fi-social-bing:before, .fi-social-blogger:before, .fi-social-delicious:before, .fi-social-designer-news:before, .fi-social-deviant-art:before, .fi-social-digg:before, .fi-social-dribbble:before, .fi-social-drive:before, .fi-social-dropbox:before, .fi-social-evernote:before, .fi-social-facebook:before, .fi-social-flickr:before, .fi-social-forrst:before, .fi-social-foursquare:before, .fi-social-game-center:before, .fi-social-github:before, .fi-social-google-plus:before, .fi-social-hacker-news:before, .fi-social-hi5:before, .fi-social-instagram:before, .fi-social-joomla:before, .fi-social-lastfm:before, .fi-social-linkedin:before, .fi-social-medium:before, .fi-social-myspace:before, .fi-social-orkut:before, .fi-social-path:before, .fi-social-picasa:before, .fi-social-pinterest:before, .fi-social-rdio:before, .fi-social-reddit:before, .fi-social-skillshare:before, .fi-social-skype:before, .fi-social-smashing-mag:before, .fi-social-snapchat:before, .fi-social-spotify:before, .fi-social-squidoo:before, .fi-social-stack-overflow:before, .fi-social-steam:before, .fi-social-stumbleupon:before, .fi-social-treehouse:before, .fi-social-tumblr:before, .fi-social-twitter:before, .fi-social-vimeo:before, .fi-social-windows:before, .fi-social-xbox:before, .fi-social-yahoo:before, .fi-social-yelp:before, .fi-social-youtube:before, .fi-social-zerply:before, .fi-social-zurb:before, .fi-sound:before, .fi-star:before, .fi-stop:before, .fi-strikethrough:before, .fi-subscript:before, .fi-superscript:before, .fi-tablet-landscape:before, .fi-tablet-portrait:before, .fi-target-two:before, .fi-target:before, .fi-telephone-accessible:before, .fi-telephone:before, .fi-text-color:before, .fi-thumbnails:before, .fi-ticket:before, .fi-torso-business:before, .fi-torso-female:before, .fi-torso:before, .fi-torsos-all-female:before, .fi-torsos-all:before, .fi-torsos-female-male:before, .fi-torsos-male-female:before, .fi-torsos:before, .fi-trash:before, .fi-trees:before, .fi-trophy:before, .fi-underline:before, .fi-universal-access:before, .fi-unlink:before, .fi-unlock:before, .fi-upload-cloud:before, .fi-upload:before, .fi-usb:before, .fi-video:before, .fi-volume-none:before, .fi-volume-strike:before, .fi-volume:before, .fi-web:before, .fi-wheelchair:before, .fi-widget:before, .fi-wrench:before, .fi-x-circle:before, .fi-x:before, .fi-yen:before, .fi-zoom-in:before, .fi-zoom-out:before { font-family: "foundation-icons"; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; display: inline-block; text-decoration: inherit; }
 
@@ -697,21 +697,19 @@ a, a:active, a:visited { outline: none !important; -moz-outline: none !important
 
 img { height: auto !important; }
 
-body { border-top: 10px solid #d1242a; }
+body, html { min-width: 980px; }
 
-.full-width, .site_touch-menu, .site_nav li, .site_nav a { float: left; position: relative; display: block; width: 100%; }
+body { border-top: 6px solid #d1242a; }
 
-.float-left, .footer-nav ul, .footer-nav li, .footer-nav a, .sep { float: left; position: relative; display: block; }
+.full-width, .primary-nav ul li, .primary-nav ul a { float: left; position: relative; display: block; width: 100%; }
+
+.float-left { float: left; position: relative; display: block; }
 
 .float-right { float: right; display: block; position: relative; }
-
-.visible { display: block !important; visibility: visible !important; }
 
 .text-center { text-align: center; }
 
 .text-right { text-align: right; }
-
-.text-left { text-align: left; }
 
 .hide { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
 
@@ -719,122 +717,50 @@ body { border-top: 10px solid #d1242a; }
 
 a, h1, h2, h4 { -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */ backface-visibility: hidden; }
 
-/** Gridpak Beta SCSS   Generator - http://gridpak.com/ Created by @erskinedesign */
-/* Reusable column setup */
-.col { border: 0px solid transparent; float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; background-clip: padding-box !important; }
+.col { border: 0px solid transparent; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; }
 
-/* 3. 12 Column Grid 1020px - Infinity 
------------------------------------------------------------------------------ 
+.col { margin-left: 0; padding: 0 0.5%; }
 
-Span 1:    7.41666666667%
-Span 2:    15.8333333333%
-Span 3:    24.25%
-Span 4:    32.6666666667%
-Span 5:    41.0833333333%
-Span 6:    49.5%
-Span 7:    57.9166666667%
-Span 8:    66.3333333333%
-Span 9:    74.75%
-Span 10:    83.1666666667%
-Span 11:    91.5833333333%
-Span 12:    100%
-
------------------------------------------------------------------------------ */
-.col { margin-left: 1%; padding: 0 1.5%; }
-
-/* --- Gridpak variables ---*/
 .row .col:first-child { margin-left: 0; }
 
-.span-1 { width: 7.41667%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_1 { width: 8.33333%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-2 { width: 15.83333%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_2 { width: 16.66667%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-3 { width: 24.25%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_3 { width: 25%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-4 { width: 32.66667%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_4 { width: 33.33333%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-5 { width: 41.08333%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_5 { width: 41.66667%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-6 { width: 49.5%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_6 { width: 50%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-7 { width: 57.91667%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_7 { width: 58.33333%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-8 { width: 66.33333%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_8 { width: 66.66667%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-9 { width: 74.75%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_9 { width: 75%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-10 { width: 83.16667%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_10 { width: 83.33333%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-11 { width: 91.58333%; border-left-width: 0; padding: 0 1.5%; margin-left: 1%; }
+.span_11 { width: 91.66667%; border-left-width: 0; padding: 0 1%; margin-left: 0; }
 
-.span-12 { margin-left: 0; width: 100%; }
+.span_12 { margin-left: 0; width: 100%; }
 
-.main-col { float: left; position: relative; display: block; width: 1020px; min-width: 200px !important; margin-left: -510px; left: 50%; }
+.site-container { float: left; position: relative; display: block; width: 1020px; min-width: 200px !important; margin-left: -510px; left: 50%; }
 
-.content_push { margin-top: 30px; }
+.down-tick { display: inline-block; }
+.down-tick img { width: 12px; height: auto; }
 
-.site_logo { padding-left: 0px; margin-left: 0px; margin-top: 30px; }
+.site-header { padding: 20px 0; }
 
-.site_nav--container { margin-left: 0px; padding-left: 0px; }
+.primary-nav { padding: 0 20px 0 0; }
+.primary-nav ul { margin: 0; padding: 0; }
+.primary-nav a { padding: 8px 0; font: normal 14px "gotham light", "Arial", "Helvetica", sans-serif; color: #5d5d5d; -moz-transition-property: all; -o-transition-property: all; -webkit-transition-property: all; transition-property: all; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; }
+.primary-nav a:hover { color: #d1242a; }
+.primary-nav li > ul { display: none; visibility: hidden; padding-left: 10px; }
+.primary-nav li:hover ul { display: block; visibility: visible; }
 
-.site_content--container { padding-right: 0px; margin-right: 0px; }
-
-.site_touch-menu { display: none; visibility: hidden; padding: 10px 0 !important; background: #d1242a; font: normal 16px "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; text-transform: uppercase; color: white; text-align: center; }
-.site_touch-menu:hover { color: white; background: #424243; }
-
-.site_nav { padding: 0px; margin: 0px; }
-.site_nav li, .site_nav a { -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-property: all; -o-transition-property: all; -webkit-transition-property: all; transition-property: all; }
-.site_nav a { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 9px 0; font: normal 14px "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; color: #424243; }
-.site_nav a:hover, .site_nav a.active { color: #d1242a; }
-.site_nav li > ul { display: none; visibility: hidden; float: none; padding: 5px 0 5px 20px; opacity: 0; }
-.site_nav li:hover ul, .site_nav li.active ul { display: block; visibility: visible; opacity: 1; }
-
-.footer-nav ul { padding: 12px 0px; margin: 0px; }
-.footer-nav a { padding: 0 0 0 10px; font: normal 14px "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; }
-
-.site_footer { border-top: 1px solid #c2c2c2; margin: 20px 0; padding: 15px 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.red_heading { background: rgba(209, 36, 42, 0.8); font: normal 40px "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; padding: 18px; color: white; margin: 0; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.hp-hero-heading { position: absolute; bottom: 0px; left: 0px; }
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; font-weight: normal; }
-
-.h1 { font-size: 44px; line-height: 46px; color: #111111; padding: 25px 0; margin: 0px; display: block; }
-
-.h2 { font-size: 30px; line-height: 32px; color: #424243; padding: 20px 0; margin: 0px; display: block; }
-
-a { color: #424243; -moz-transition-duration: 0.2s; -o-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-property: all; -o-transition-property: all; -webkit-transition-property: all; transition-property: all; }
-a:hover { color: #d1242a; }
-
-.red { color: #d1242a; }
-.red:hover { text-decoration: underline !important; }
-
-.standard-p { font: normal 14px "gotham-light", "Gotham Light", "Helvetica", "Arial", sans-serif; color: #424243; }
-.standard-p.large { font-size: 22px; line-height: 24px; }
-
-.down-tick { width: 12px; height: 6px; }
-.down-tick img { width: 12px; height: 6px; }
-
-.sep { clear: left; margin: 0px; width: 7%; border-top: 6px solid #dbdbdc; }
-
-@media all and (max-width: 1020px) { .main-col { width: 100%; left: 0px; margin-left: 0px; padding: 0 10px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } }
-@media all and (max-width: 800px) { .site_nav--container { width: 100%; margin: 0px; padding: 0px; background: whitesmoke; }
-  .site_nav--container ul, .site_nav--container li, .site_nav--container a { margin: 0px; padding: 0px; width: 100%; text-align: center; }
-  .site_nav--container li > ul { display: block; visibility: visible; opacity: 1; padding: 0px; float: left; width: 100%; background: white; }
-  .site_nav--container li > a { padding: 6px; font-size: 16px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  .content_push { margin-top: 10px; }
-  .site_nav { display: none; visibility: hidden; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  .site_logo { text-align: center; }
-  .site_logo img { width: 90%; height: auto !important; }
-  .hp-hero-heading { float: left; position: relative; display: block; }
-  .site_touch-menu { display: block; visibility: visible; }
-  .site_content--container { width: 100%; margin-left: 0px; padding-left: 0px; margin-top: 20px; }
-  .site_footer .standard-p { width: 100%; text-align: center; }
-  .footer-nav { float: left; width: 100%; padding: 0px; margin: 10px 0 0 0; border-top: 1px solid #c2c2c2; }
-  .footer-nav ul { float: left; width: 100%; padding: 0px; margin: 0px; }
-  .footer-nav li { width: 100%; padding: 10px; text-align: center; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  .footer-nav li a { width: 100%; display: block; padding: 0px; } }
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) { /* Style adjustments for high resolution devices */ }
 @media print { * { background: transparent !important; color: #000 !important; /* Black prints faster: h5bp.com/s */ box-shadow: none !important; text-shadow: none !important; }
   a, a:visited { text-decoration: underline; }

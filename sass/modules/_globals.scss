@@ -18,10 +18,12 @@
 	
 	//Foundation 
 	@include font-face("foundation-icons", font-files("foundation-icons.eot","foundation-icons.ttf", "foundation-icons.woff"));
+	@include font-face("gotham light", font-files("gothamhtf-light-webfont.eot","gothamhtf-light-webfont.ttf", "gothamhtf-light-webfont.woff"));
 
 	
 	//Default Font Families, Adjustments etc
-	$font-family-default: "Arial", "Helvetica", sans-serif !default;	
+	$font-family-default: "Arial", "Helvetica", sans-serif !default;
+	$gotham-light: "gotham light", "Arial", "Helvetica", sans-serif !default;	
 	$default-font-size: 		14px !default;
 	$default-light-height:		18px !default;
 
@@ -36,6 +38,10 @@
 //  Colors
 //  ==========================================================================
 
+	$brand-red:			#d1242a;
+	$brand-grey:		#5d5d5d;
+	$brand-med-grey: 	#666666;
+	$brand-black: 		#111111;
 
 //  ==========================================================================
 //  Sprites, Image Refs

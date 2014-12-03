@@ -15,6 +15,7 @@
 	}
 	
 	body{
+		border-top: 6px solid $brand-red;
 	}
 	
 	.full-width{
@@ -59,6 +60,62 @@
 //  Load Addtl Modules
 //  ==========================================================================
 	@import 'grids';
+
+//  ==========================================================================
+//  Glphys
+//  ==========================================================================
+
+	.down-tick{
+		display: inline-block;
+		img{
+			width: 12px;
+			height: auto;
+		}
+	}
+	
+//  ==========================================================================
+//  Site Header
+//  ==========================================================================
+	
+	.site-header{
+		padding: 20px 0;
+	}
+	
+//  ==========================================================================
+//  Site Nav
+//  ==========================================================================
+
+	.primary-nav{
+		padding: 0 20px 0 0;
+		ul{
+			margin: 0;
+			padding: 0;
+			li, a{
+				@extend .full-width;
+			}
+		}
+		a{
+			padding: 8px 0;
+			font: normal 14px $gotham-light;
+			color: $brand-grey;
+			@include transition-property(all);
+			@include transition-duration(.2s);
+			&:hover{
+				color: $brand-red;
+			}
+		}
+		li > ul{
+			display: none;
+			visibility: hidden;
+			padding-left: 10px;
+		}
+		li:hover{
+			ul{
+				display: block;
+				visibility: visible;
+			}
+		}
+	}
 	
 //  ==========================================================================
 //  Themeatic Styles Below
