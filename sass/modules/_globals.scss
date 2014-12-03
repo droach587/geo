@@ -18,12 +18,19 @@
 	
 	//Foundation 
 	@include font-face("foundation-icons", font-files("foundation-icons.eot","foundation-icons.ttf", "foundation-icons.woff"));
+	@include font-face("flexslider-icon", font-files("flexslider-icon.eot","flexslider-icon.ttf", "flexslider-icon.woff"));
 	@include font-face("gotham light", font-files("gothamhtf-light-webfont.eot","gothamhtf-light-webfont.ttf", "gothamhtf-light-webfont.woff"));
+	@include font-face("gotham medium", font-files("gothamhtf-medium-webfont.eot","gothamhtf-medium-webfont.ttf", "gothamhtf-medium-webfont.woff"));
+	@include font-face("gotham book", font-files("gothamhtf-book-webfont.eot","gothamhtf-book-webfont.ttf", "gothamhtf-book-webfont.woff"));
+	@include font-face("gotham black", font-files("gothamhtf-black-webfont.eot","gothamhtf-black-webfont.ttf", "gothamhtf-black-webfont.woff"));
 
 	
 	//Default Font Families, Adjustments etc
 	$font-family-default: "Arial", "Helvetica", sans-serif !default;
-	$gotham-light: "gotham light", "Arial", "Helvetica", sans-serif !default;	
+	$gotham-light: "gotham light", "Arial", "Helvetica", sans-serif !default;
+	$gotham-medium: "gotham medium", "Arial", "Helvetica", sans-serif !default;
+	$gotham-book: "gotham book", "Arial", "Helvetica", sans-serif !default;
+	$gotham-black: "gotham black", "Arial", "Helvetica", sans-serif !default;	
 	$default-font-size: 		14px !default;
 	$default-light-height:		18px !default;
 

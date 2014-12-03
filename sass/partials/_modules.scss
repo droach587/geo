@@ -41,6 +41,10 @@
 		position: relative;
 	}
 	
+	.margin-top-40{
+		margin-top: 40px !important;
+	}
+	
 	.text-center{
 		text-align: center;
 	}
@@ -69,6 +73,7 @@
 //  Load Addtl Modules
 //  ==========================================================================
 	@import 'grids';
+	@import 'vendor/flexslider/flexslider';
 
 //  ==========================================================================
 //  Glphys
@@ -104,12 +109,48 @@
 	}
 	
 	.standard-p{
-		font: normal 14px/18px $gotham-light;
+		font: normal 15px/22px $gotham-light;
 		&.large{
 			font-size: 22px;
 		}
+		strong{
+			font-family: $gotham-black;
+			font-weight: normal;
+		}
+		&.book{ font-family: $gotham-book; }
+		&.dropdown{
+			@extend .full-width;
+			border-top: 1px solid #bbb;
+			margin: 0;
+			background: lighten($brand-grey,60%);
+			padding: 20px;
+			display: none;
+			visibility: hidden;
+			@include box-sizing(border-box);
+		}
+		a{
+			color: $brand-red;
+			&:hover{
+				text-decoration: underline !important;
+			}
+		}
 	}
 	
+	.primary-content-banner{
+		background: $brand-red image-url('hp-hero-background.jpg') center bottom no-repeat;
+		background-blend-mode: multiply;
+		padding: 10px;
+		font: normal 40px $gotham-light;
+		color: white;
+		margin: 0;
+		@include background-size(cover);
+		@include box-sizing(border-box);	
+	}
+	
+	.eyebrow{
+		font-family: $gotham-light;
+		font-size: 32px;
+	}
 	.red{
 		color: $brand-red;
 		&:hover{
@@ -144,7 +185,8 @@
 			color: $brand-grey;
 			@include transition-property(all);
 			@include transition-duration(.2s);
-			&:hover{
+			&:hover,
+			&.active{
 				color: $brand-red;
 			}
 		}
@@ -152,12 +194,6 @@
 			display: none;
 			visibility: hidden;
 			padding-left: 10px;
-		}
-		li:hover{
-			ul{
-				display: block;
-				visibility: visible;
-			}
 		}
 	}
 	
@@ -222,3 +258,46 @@
 //  ==========================================================================
 //  Themeatic Styles Below
 //  ==========================================================================
+	
+	.quote-slider{
+		margin-top: 40px !important;
+		li{
+			text-align: center;
+		}
+		.quote--heading{
+			text-align: center;
+			font: normal 32px $gotham-light;
+		}
+		.quote--source{
+			font: normal 20px $gotham-light;
+			color: $brand-grey;
+			text-align: center;
+		}
+		.quote--heading, .quote--source{
+			display: inline-block;
+			width: 80%;
+		}
+		.slide-count{
+			position: absolute;
+			top: 5px;
+			right: 10px;
+			font: normal 20px $gotham-light;
+			color: $brand-grey;
+		}
+	}
+	
+//  ==========================================================================
+//  Flex Slider Overrides
+//  ==========================================================================
+
+	.flexslider{
+		border: 1px solid #bbb;
+		margin: 0;
+		@include border-radius(0px);
+		@include box-shadow(none);
+	}
+	
+	.flex-direction-nav a{
+		&::before{ font-size: 35px; }
+		&:hover{ &::before{ color: $brand-red; } }
+	}

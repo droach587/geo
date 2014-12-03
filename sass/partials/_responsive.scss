@@ -32,10 +32,14 @@
 		.primary-nav{
 			width: 100%;
 			padding: 0px;
+			@include box-shadow(inset 0px 0px 50px rgba(#bbb,.5));
 			> ul{
 				display: none;
 				visibility: hidden;
 				border: 1px solid #bbb;
+				max-height: 200px;
+				overflow: scroll;
+				-webkit-overflow-scrolling: touch;
 				@include box-sizing(border-box);
 			}
 			ul, li, a{ text-align: center; }
@@ -44,9 +48,7 @@
 					display: block; 
 					visibility: visible; 
 					margin: 0; padding: 0;
-					li{
-						background: rgba(#bbb,.4);
-					}
+					li{ background: rgba(#bbb,.4); }
 				}
 			}
 		}
@@ -73,6 +75,45 @@
 		.standard-p.large{
 			font-size: 26px;
 			line-height: 28px;
+		}
+		
+		.standard-p{
+			br{
+				display: none;
+				visibility: hidden;
+			}
+			&.dropdown{
+				margin-top: -16px;
+				br{
+					display: inline-block;
+					visibility: visible;
+				}
+			}
+		}
+		
+		.dropdown-trigger{
+			float: left;
+			position: relative;
+			width: 100%;
+			text-align: center;
+			padding: 5px 0;
+			margin: 5px 0 0 0;
+			border-top: 1px solid rgba($brand-red,.4);
+			border-bottom: 1px solid rgba($brand-red,.4);
+			font-size: 18px;
+		}
+		
+	//  ==========================================================================
+	//  Quote Module
+	//  ==========================================================================
+	
+		.quote-slider{
+			.quote--heading{
+				font-size: 24px;
+			}
+			.quote--source{
+				font-size: 18px;
+			}
 		}
 		
 	//  ==========================================================================
