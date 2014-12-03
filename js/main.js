@@ -28,7 +28,10 @@ var mainJs = (function($){
 	}());
 	
 	
-
+	$('.site_touch-menu').on('click', function(e){
+		$('.site_nav').toggleClass('visible');
+		e.preventDefault();
+	});
 	
 
 	// PUBLIC METHODS
