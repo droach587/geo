@@ -713,6 +713,8 @@ body { border-top: 6px solid #d1242a; }
 
 .pull-20 { margin-top: 0px; margin-bottom: 30px; }
 
+.margin-top-30 { margin-top: 30px !important; }
+
 .margin-top-20 { margin-top: 20px !important; }
 
 .margin-top-40 { margin-top: 40px !important; }
@@ -927,6 +929,15 @@ a.button.red:hover, .button.red:hover { background: #5d5d5d; text-decoration: no
 .pricing-row .pricing-left { padding-right: 20px; }
 .pricing-row .pricing-right { padding-left: 20px; }
 
+.profile-details { padding-left: 12px !important; }
+.profile-details.no-pad { padding-left: 0px !important; }
+.profile-details .h2 { margin: 0px; font: normal 28px "gotham medium", "Arial", "Helvetica", sans-serif; color: #111111; }
+.profile-details .h2 em { font-size: 22px; }
+.profile-details .h3 { font: italic 18px "gotham light", "Arial", "Helvetica", sans-serif; }
+.profile-details .standard-p, .profile-details .site-footer .footer-nav a, .site-footer .footer-nav .profile-details a { font-size: 14px; line-height: 18px; margin: 0px; }
+.profile-details .standard-p strong, .profile-details .site-footer .footer-nav a strong, .site-footer .footer-nav .profile-details a strong { font-family: "gotham medium", "Arial", "Helvetica", sans-serif; text-transform: uppercase; font-weight: normal; padding: 0px; margin: 0px; }
+.profile-details.exp .standard-p, .profile-details.exp .site-footer .footer-nav a, .site-footer .footer-nav .profile-details.exp a { font-size: 12px; }
+
 .site-footer { border-top: 1px solid #bbb; margin-top: 60px; }
 .site-footer .footer-nav a { padding: 5px; color: #5d5d5d; }
 .site-footer .footer-nav a:hover, .site-footer .footer-nav a.active { color: #d1242a; }
@@ -967,6 +978,10 @@ a.button.red:hover, .button.red:hover { background: #5d5d5d; text-decoration: no
   .pricing-row .span_8 { width: 60%; clear: none; }
   .pricing-row br { display: inline-block; visibility: visible; }
   .pricing-row .b-bottom br { display: inline-block; visibility: visible; }
+  .profile-row .col.span_3 { width: 100%; clear: left; }
+  .profile-details { padding: .5% !important; }
+  .profile-details br { display: inline-block; visibility: visible; }
+  .profile-details.exp { margin-top: 20px; padding-top: 20px !important; border-top: 1px solid #bbb; }
   .quote-slider .quote--heading { font-size: 24px; }
   .quote-slider .quote--source { font-size: 18px; }
   .site-footer { margin-top: 20px; }

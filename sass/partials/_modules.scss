@@ -45,6 +45,11 @@
 		margin-top: 0px;
 		margin-bottom: 30px;
 	}
+	
+	.margin-top-30{
+		margin-top: 30px !important;
+	}
+	
 	.margin-top-20{
 		margin-top: 20px !important;
 	}
@@ -356,6 +361,45 @@
 		}
 		.pricing-right{
 			padding-left: 20px;
+		}
+	}
+
+//  ==========================================================================
+//  Team Bios
+//  ==========================================================================
+
+	.profile-details{
+		padding-left: 12px !important;
+		&.no-pad{
+			padding-left: 0px !important;
+		}
+		.h2{
+			margin: 0px;
+			font: normal 28px $gotham-medium;
+			color: $brand-black;
+			em{
+				font-size: 22px;
+			}
+		}
+		.h3{
+			font: italic 18px $gotham-light;
+		}
+		.standard-p{
+			font-size: 14px;
+			line-height: 18px;
+			margin: 0px;
+			strong{
+				font-family: $gotham-medium;
+				text-transform: uppercase;
+				font-weight: normal;
+				padding: 0px;
+				margin: 0px;
+			}
+		}
+		&.exp{
+			.standard-p{
+				font-size: 12px;
+			}
 		}
 	}
 	
