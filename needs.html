@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="format-detection" content="telephone=no">
+		
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <script>
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-XXXXX-X']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script');
+		    ga.type = 'text/javascript';
+		    ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0];
+		    s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+        
+    </head>
+    
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="site-container">
+	        
+	        <header class="site-header col span_12">
+		    	<h1>
+			    	<img src="/img/gwa-logo.jpg" width="320" height="auto">
+		    	</h1>
+	        </header>
+	        
+	        <section class="site-body full-width">
+		        
+		        <nav class="primary-nav col span_3">
+			        <a href="#" class="primary-mobile-trigger">menu <i class="fi-list"></i></a>
+			    	<ul class="col span_12 primary-nav-ul">
+				        <li>
+				        	<a href="#" class="expanded">About Geometric <i class="down-tick"><img src="/img/down-tick.jpg"></i></a>
+							<ul class="full-width">
+								<li><a href="#" class="active">Investment Philosophy</a></li>
+								<li><a href="#">Team</a></li>
+								<li><a href="#">Pricing &amp; Services</a></li>
+								<li><a href="#">Partners</a></li>
+							</ul>
+				        </li>
+				        <li>
+				        	<a href="#" class="expanded active-menu">About You <i class="down-tick"><img src="/img/down-tick.jpg"></i></a>
+							<ul class="full-width visible">
+								<li><a href="#" class="active">Your Needs</a></li>
+								<li><a href="#">Your Other Options</a></li>
+							</ul>
+				        </li>
+				        <li><a href="#">Blog</a></li>
+				        <li><a href="#">Client Access</a></li>
+				        <li><a href="#">Contact Us</a></li>
+			        </ul>
+		        </nav>
+		        
+		        <div class="primary-content col span_9">
+			       <h1 class="primary-content-banner">Your Needs</h1>
+			       <h1 class="h1 full-width">
+				       You’re here because you...
+			       </h1>
+			       <hr class="sep sml">
+			       <p class="standard-p book full-width">
+						...are a mid-career professional working in finance, consulting, management, or law.
+			       </p>
+			       <p class="standard-p book full-width">						
+						... lack either the expertise, desire, discipline, or time to manage your personal and/or family’s investment and financial planning decisions.
+			       </p>
+			       <p class="standard-p book full-width">
+						... are enjoyable to work with.
+			       </p>
+			       <h1 class="h1 full-width">
+				       You’re looking for a Wealth Advisor who...
+			       </h1>
+			       <p class="standard-p book full-width">
+						...understands your background, career, and financial situation.
+			       </p>
+			       <p class="standard-p book full-width">
+						...develops a plan that holistically integrates all of your family’s investment accounts, other assets, debt, human capital, and unique goals.
+			       </p>
+			       <p class="standard-p book full-width">
+						...will be there as your life evolves to ensure that your investments and plan match your changing needs.
+			       </p>
+			       <p class="standard-p book full-width">
+						...invests in a thoughtful, diversified, low-cost, tax-efficient manner.
+			       </p>
+			       <p class="standard-p book full-width">
+						...appreciates the compliance or conflict-of-interest restrictions of your employer, and invests accordingly.
+			       </p>
+			       <p class="standard-p book full-width">
+						...will never try to sell you anything.
+			       </p>
+			       <p class="standard-p book full-width">
+						...fiercely protects your time.
+			       </p>
+		        </div>
+		        
+		        <footer class="full-width site-footer">
+			        <p class="standard-p float-left">©2014 Geometric Wealth Advisors</p>
+			        <nav class="footer-nav float-right">
+				        <ul class="float-right">
+					        <li><a href="#">Contact Us</a></li>
+					        <li><a href="#">Disclaimer</a></li>
+				        </ul>
+			        </nav>
+		        </footer>
+		        
+	        </section>
+	        
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="/js/vendor/jquery.flexslider.js"></script>
+        <script src="js/touchnav.js"></script>
+        <script src="js/sliderutils.js"></script>
+        
+        <script>
+        	$(document).ready(function(){
+        		touchNav.init({});
+        		$('.flexslider').flexslider({
+	        		controlNav: false,
+	        		start:function(slider){
+		        		var total = $('.flexslider .slides li').length,
+		        			current = slider.currentSlide+1;
+	        			sliderUtils.updateCounter({
+		        			total: total,
+		        			current: current,
+		        			element: $('.slide-count')
+	        			});
+	        		},
+	        		after: function(slider){
+		        		var total = $('.flexslider .slides li').length,
+		        			current = slider.currentSlide+1;
+	        			sliderUtils.updateCounter({
+		        			total: total,
+		        			current: current,
+		        			element: $('.slide-count')
+	        			});
+	        		}
+        		});
+        	})
+        </script>
+
+    </body>
+</html>

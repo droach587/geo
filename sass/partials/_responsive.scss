@@ -65,6 +65,14 @@
 		.primary-content{
 			width: 100%;
 			padding: 20px 0;
+			
+			.span_4,
+			.span_5,
+			.span_6,
+			.span_7{
+				width: 100%;
+				clear: left;
+			}
 		}
 		
 		.hp-hero .hp-hero-heading{
@@ -91,7 +99,8 @@
 			}
 		}
 		
-		.dropdown-trigger{
+		.dropdown-trigger,
+		.partner-dropdown-trigger{
 			float: left;
 			position: relative;
 			width: 100%;
@@ -101,6 +110,20 @@
 			border-top: 1px solid rgba($brand-red,.4);
 			border-bottom: 1px solid rgba($brand-red,.4);
 			font-size: 18px;
+		}
+		
+	//  ==========================================================================
+	//  Partners
+	//  ==========================================================================
+	
+		.partner-row{
+			.col.span_7{
+				margin: 15px 0;
+				padding: .5%;
+			}
+			.standard-p.dropdown{
+				margin-top: -32px !important;
+			}
 		}
 		
 	//  ==========================================================================

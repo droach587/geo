@@ -17,6 +17,20 @@ var touchNav = (function () {
 			e.preventDefault();  
 		});
 		
+		$(document).on('click touchstart', '.partner-dropdown-trigger', function(e){
+			var target = $(this).attr('data-target'),
+				$plus = $(this).find('.plus');
+			$('.standard-p.dropdown#'+target).toggleClass('visible');
+			
+			if($plus.html()==='+'){
+				$plus.html('-');
+			}else{
+				$plus.html('+');
+			}
+			
+			e.preventDefault();  
+		});
+		
 		$(document).on('click', '.primary-nav-ul li a.expanded', function(e){
 			if(!$(this).hasClass('active-menu')){
 				$(this).toggleClass('active');

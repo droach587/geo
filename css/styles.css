@@ -711,7 +711,13 @@ body { border-top: 6px solid #d1242a; }
 
 .float-right { float: right; display: block; position: relative; }
 
+.pull-20 { margin-top: 0px; margin-bottom: 30px; }
+
+.margin-top-20 { margin-top: 20px !important; }
+
 .margin-top-40 { margin-top: 40px !important; }
+
+.margin-top-60 { margin-top: 60px !important; }
 
 .text-center { text-align: center; }
 
@@ -860,25 +866,32 @@ html[xmlns] .slides { display: block; }
 
 .sep { border-top: 6px solid #dddddd; width: 100%; }
 .sep.sml { width: 10%; }
+.sep.inv { border-color: white; }
 
 .h1 { font: normal 44px/44px "gotham light", "Arial", "Helvetica", sans-serif; color: #5d5d5d; }
 
 .h2 { font: normal 30px/32px "gotham light", "Arial", "Helvetica", sans-serif; color: #5d5d5d; }
 
-.standard-p, .site-footer .footer-nav a { font: normal 15px/22px "gotham light", "Arial", "Helvetica", sans-serif; }
+.standard-p, .site-footer .footer-nav a { font: normal 15px/22px "gotham light", "Arial", "Helvetica", sans-serif; color: #666666; }
 .standard-p.large, .site-footer .footer-nav a.large { font-size: 22px; }
-.standard-p strong, .site-footer .footer-nav a strong { font-family: "gotham black", "Arial", "Helvetica", sans-serif; font-weight: normal; }
+.standard-p strong, .site-footer .footer-nav a strong { font-family: "gotham black", "Arial", "Helvetica", sans-serif; font-weight: normal !important; }
 .standard-p.book, .site-footer .footer-nav a.book { font-family: "gotham book", "Arial", "Helvetica", sans-serif; }
 .standard-p.dropdown, .site-footer .footer-nav a.dropdown { border-top: 1px solid #bbb; margin: 0; background: #f6f6f6; padding: 20px; display: none; visibility: hidden; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .standard-p a, .site-footer .footer-nav a a { color: #d1242a; }
 .standard-p a:hover, .site-footer .footer-nav a a:hover { text-decoration: underline !important; }
 
-.primary-content-banner { background: #d1242a url('/img/hp-hero-background.jpg?1417569360') center bottom no-repeat; background-blend-mode: multiply; padding: 10px; font: normal 40px "gotham light", "Arial", "Helvetica", sans-serif; color: white; margin: 0; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.primary-content-banner { background: #d1242a url('/img/hp-hero-background.jpg?1417569360') center bottom no-repeat; background-blend-mode: multiply; padding: 10px; font: normal 40px "gotham light", "Arial", "Helvetica", sans-serif; color: white; margin: 0 0 10px 0; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .eyebrow { font-family: "gotham light", "Arial", "Helvetica", sans-serif; font-size: 32px; }
 
 .red { color: #d1242a; }
 .red:hover { text-decoration: underline !important; }
+.red.slash { letter-spacing: -3px; margin-right: 2px; display: inline-block; }
+.red.slash:hover { text-decoration: none; }
+
+a.button, .button { display: inline-block; background: black; color: white !important; margin: 10px 0 0 0; padding: 8px 20px; }
+a.button.red, .button.red { background: #d1242a; }
+a.button.red:hover, .button.red:hover { background: #5d5d5d; text-decoration: none !important; }
 
 .site-header { padding: 20px 0; }
 
@@ -891,14 +904,26 @@ html[xmlns] .slides { display: block; }
 .primary-mobile-trigger { background: #d1242a; padding: 10px; color: white !important; text-transform: uppercase; display: none; visibility: hidden; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .primary-mobile-trigger:hover { background: #5d5d5d; color: white !important; }
 
+.primary-content .col { padding-left: 0px; }
+
 .hp-hero { margin-bottom: 20px; }
 .hp-hero .hp-hero-heading { margin: 0; position: absolute; bottom: 0px; background: #d1242a url('/img/hp-hero-background.jpg?1417569360') center bottom no-repeat; background-blend-mode: multiply; padding: 10px; font: normal 40px "gotham light", "Arial", "Helvetica", sans-serif; color: white; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+.panel-login { background: #e5e5e5 url('/img/login-stripes.jpg?1417746896') center right no-repeat; padding: 30px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; }
+.panel-login .h1 { margin: 10px 0; }
+
+.partner-img { border: 1px solid #bbb; background: white center center no-repeat; padding: 10px; min-height: 155px; -moz-background-size: contain; -o-background-size: contain; -webkit-background-size: contain; background-size: contain; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.partner-row { padding-bottom: 20px; }
+.partner-row .col.span_7 { padding-left: 20px; }
+.partner-row .standard-p, .partner-row .site-footer .footer-nav a, .site-footer .footer-nav .partner-row a { margin-top: 0px; font-size: 14px; line-height: 18px; }
+.partner-row .standard-p strong, .partner-row .site-footer .footer-nav a strong, .site-footer .footer-nav .partner-row a strong { font-family: "gotham medium", "Arial", "Helvetica", sans-serif; font-size: 28px; padding-bottom: 20px; display: inline-block; }
+
 .site-footer { border-top: 1px solid #bbb; margin-top: 60px; }
 .site-footer .footer-nav a { padding: 5px; color: #5d5d5d; }
-.site-footer .footer-nav a:hover { color: #d1242a; }
+.site-footer .footer-nav a:hover, .site-footer .footer-nav a.active { color: #d1242a; }
 
-.quote-slider { margin-top: 40px !important; }
+.quote-slider { margin-top: 40px !important; overflow: hidden; }
 .quote-slider li { text-align: center; }
 .quote-slider .quote--heading { text-align: center; font: normal 32px "gotham light", "Arial", "Helvetica", sans-serif; }
 .quote-slider .quote--source { font: normal 20px "gotham light", "Arial", "Helvetica", sans-serif; color: #5d5d5d; text-align: center; }
@@ -920,12 +945,15 @@ html[xmlns] .slides { display: block; }
   .primary-nav li > ul li { background: rgba(187, 187, 187, 0.4); }
   .primary-mobile-trigger { display: block; visibility: visible; }
   .primary-content { width: 100%; padding: 20px 0; }
+  .primary-content .span_4, .primary-content .span_5, .primary-content .span_6, .primary-content .span_7 { width: 100%; clear: left; }
   .hp-hero .hp-hero-heading { float: left; position: relative; }
   .standard-p.large, .site-footer .footer-nav a.large { font-size: 26px; line-height: 28px; }
   .standard-p br, .site-footer .footer-nav a br { display: none; visibility: hidden; }
   .standard-p.dropdown, .site-footer .footer-nav a.dropdown { margin-top: -16px; }
   .standard-p.dropdown br, .site-footer .footer-nav a.dropdown br { display: inline-block; visibility: visible; }
-  .dropdown-trigger { float: left; position: relative; width: 100%; text-align: center; padding: 5px 0; margin: 5px 0 0 0; border-top: 1px solid rgba(209, 36, 42, 0.4); border-bottom: 1px solid rgba(209, 36, 42, 0.4); font-size: 18px; }
+  .dropdown-trigger, .partner-dropdown-trigger { float: left; position: relative; width: 100%; text-align: center; padding: 5px 0; margin: 5px 0 0 0; border-top: 1px solid rgba(209, 36, 42, 0.4); border-bottom: 1px solid rgba(209, 36, 42, 0.4); font-size: 18px; }
+  .partner-row .col.span_7 { margin: 15px 0; padding: .5%; }
+  .partner-row .standard-p.dropdown, .partner-row .site-footer .footer-nav a.dropdown, .site-footer .footer-nav .partner-row a.dropdown { margin-top: -32px !important; }
   .quote-slider .quote--heading { font-size: 24px; }
   .quote-slider .quote--source { font-size: 18px; }
   .site-footer { margin-top: 20px; }
