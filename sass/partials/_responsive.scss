@@ -163,6 +163,13 @@
 				width: 100%;
 				clear: left;
 			}
+			&.advisory-board{
+				margin-top: 0px !important;
+				.profile-details{
+					padding-top: 10px !important;
+					padding-bottom: 10px;
+				}
+			}
 		}
 		.profile-details{
 			padding: .5% !important;
