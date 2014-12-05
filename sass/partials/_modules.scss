@@ -325,6 +325,39 @@
 			}
 		}
 	}
+
+//  ==========================================================================
+//  Pricing
+//  ==========================================================================
+
+	.pricing-table{
+		display: inline-block;
+		padding-bottom: 20px;
+		.b-bottom{
+			border-bottom: 1px solid #bbb;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: -1px;
+			@include box-sizing(border-box);
+			br{
+				display: none;
+				visibility: hidden;
+			}
+		}
+		.b-left{
+			border-left: 1px solid #bbb;
+			@include box-sizing(border-box);
+		}
+	}
+	
+	.pricing-row{
+		.pricing-left{
+			padding-right: 20px;
+		}
+		.pricing-right{
+			padding-left: 20px;
+		}
+	}
 	
 //  ==========================================================================
 //  Site Footer

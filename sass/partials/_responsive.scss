@@ -125,6 +125,34 @@
 				margin-top: -32px !important;
 			}
 		}
+	
+	//  ==========================================================================
+	//  Pricing
+	//  ==========================================================================
+	
+		.pricing-row{
+			.pricing-left, .pricing-right{
+				padding: .5%;
+			}
+			.span_4{
+				width: 40%;
+				clear: none;
+			}
+			.span_8{
+				width: 60%;
+				clear: none;
+			}
+			br{
+				display: inline-block;
+				visibility: visible;
+			}
+			.b-bottom{
+				br{
+					display: inline-block;
+					visibility: visible;
+				}
+			}
+		}
 		
 	//  ==========================================================================
 	//  Quote Module

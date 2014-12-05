@@ -919,6 +919,14 @@ a.button.red:hover, .button.red:hover { background: #5d5d5d; text-decoration: no
 .partner-row .standard-p, .partner-row .site-footer .footer-nav a, .site-footer .footer-nav .partner-row a { margin-top: 0px; font-size: 14px; line-height: 18px; }
 .partner-row .standard-p strong, .partner-row .site-footer .footer-nav a strong, .site-footer .footer-nav .partner-row a strong { font-family: "gotham medium", "Arial", "Helvetica", sans-serif; font-size: 28px; padding-bottom: 20px; display: inline-block; }
 
+.pricing-table { display: inline-block; padding-bottom: 20px; }
+.pricing-table .b-bottom { border-bottom: 1px solid #bbb; text-transform: uppercase; font-size: 14px; letter-spacing: -1px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.pricing-table .b-bottom br { display: none; visibility: hidden; }
+.pricing-table .b-left { border-left: 1px solid #bbb; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.pricing-row .pricing-left { padding-right: 20px; }
+.pricing-row .pricing-right { padding-left: 20px; }
+
 .site-footer { border-top: 1px solid #bbb; margin-top: 60px; }
 .site-footer .footer-nav a { padding: 5px; color: #5d5d5d; }
 .site-footer .footer-nav a:hover, .site-footer .footer-nav a.active { color: #d1242a; }
@@ -954,6 +962,11 @@ a.button.red:hover, .button.red:hover { background: #5d5d5d; text-decoration: no
   .dropdown-trigger, .partner-dropdown-trigger { float: left; position: relative; width: 100%; text-align: center; padding: 5px 0; margin: 5px 0 0 0; border-top: 1px solid rgba(209, 36, 42, 0.4); border-bottom: 1px solid rgba(209, 36, 42, 0.4); font-size: 18px; }
   .partner-row .col.span_7 { margin: 15px 0; padding: .5%; }
   .partner-row .standard-p.dropdown, .partner-row .site-footer .footer-nav a.dropdown, .site-footer .footer-nav .partner-row a.dropdown { margin-top: -32px !important; }
+  .pricing-row .pricing-left, .pricing-row .pricing-right { padding: .5%; }
+  .pricing-row .span_4 { width: 40%; clear: none; }
+  .pricing-row .span_8 { width: 60%; clear: none; }
+  .pricing-row br { display: inline-block; visibility: visible; }
+  .pricing-row .b-bottom br { display: inline-block; visibility: visible; }
   .quote-slider .quote--heading { font-size: 24px; }
   .quote-slider .quote--source { font-size: 18px; }
   .site-footer { margin-top: 20px; }
